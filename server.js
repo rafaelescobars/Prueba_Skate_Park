@@ -117,7 +117,6 @@ app.get("/login", (req, res) => {
 // Ruta /login POST
 app.post("/login", (req, res) => {
   const data = Object.values(req.body);
-  console.log(data);
 
   postLogin(data).then(
     (value) => {
@@ -165,8 +164,6 @@ app.get("/edit", (req, res) => {
       res.render("edit", {
         contender: value,
       });
-
-      console.log(value);
     },
     (reason) => {
       console.log(reason);
