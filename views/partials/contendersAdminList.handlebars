@@ -1,0 +1,30 @@
+<div class="container">
+  <table class="table w-50 m-auto">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Foto</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Años de experiencia</th>
+        <th scope="col">Especialidad</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each contenders}}
+        <tr>
+          <td id="id">{{this.id}}</td>
+          <td><img src="/img/{{this.foto}}" alt="" style="" /></td>
+          <td>{{this.nombre}}</td>
+          <td>{{this.anos_experiencia}}</td>
+          <td>{{this.especialidad}}</td>
+          {{#if this.estado}}
+            <td><input id="checkbox" type="checkbox" checked /></td>
+          {{else}}
+            <td><input id="checkbox" type="checkbox" /></td>
+          {{/if}}
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

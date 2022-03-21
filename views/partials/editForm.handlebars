@@ -1,0 +1,73 @@
+<div class="container">
+  <form>
+    <div class="form-group row w-50 m-auto">
+      <div class="form-group col-12 col-sm-6">
+        <label>Email</label>
+        <input
+          class="form-control m-auto"
+          readonly
+          value="{{contender.email}}"
+          name="email"
+          required
+        />
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Nombre</label>
+        <input
+          class="form-control m-auto"
+          value="{{contender.nombre}}"
+          name="nombre"
+          required
+        />
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Password</label>
+        <input
+          type="password"
+          class="form-control m-auto"
+          value="{{contender.password}}"
+          name="password"
+          required
+        />
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Repita la password</label>
+        <input
+          type="password"
+          class="form-control m-auto"
+          value="{{contender.password}}"
+          name="password2"
+          required
+        />
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Años de experiencia</label>
+        <input
+          class="form-control m-auto"
+          value="{{contender.anos_experiencia}}"
+          name="anos_experiencia"
+          required
+        />
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Especialidad</label>
+        <input
+          class="form-control m-auto"
+          value="{{contender.especialidad}}"
+          name="especialidad"
+          required
+        />
+      </div>
+    </div>
+    <div class="mt-3">
+      <button
+        class="btn btn-primary"
+        onclick="putContender(event)"
+      >Actualizar</button>
+    </div>
+    <div class="mt-3">
+      <button class="btn btn-danger" onclick="deleteContender(event)">Eliminar
+        cuenta</button>
+    </div>
+  </form>
+</div>
